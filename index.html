@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TravelSmart SuperApp</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+background:#f1f5f9;
+color:#0f172a;
+padding-bottom:100px;
+}
+
+header{
+background:linear-gradient(135deg,#0f172a,#1d4ed8);
+padding:35px 25px;
+color:white;
+border-bottom-left-radius:35px;
+border-bottom-right-radius:35px;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.logo{
+font-size:30px;
+font-weight:700;
+margin-bottom:18px;
+}
+
+.hero h1{
+font-size:38px;
+line-height:1.2;
+margin-bottom:18px;
+}
+
+.hero p{
+font-size:17px;
+line-height:1.6;
+opacity:0.92;
+margin-bottom:30px;
+}
+
+.hero-btn{
+display:inline-block;
+background:#06b6d4;
+padding:16px 28px;
+border-radius:16px;
+font-weight:600;
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+.hero-btn:hover{
+background:#0891b2;
+}
+
+.main{
+padding:25px;
+}
+
+.section-title{
+font-size:28px;
+font-weight:700;
+margin-bottom:22px;
+margin-top:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:22px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:24px;
+box-shadow:0 8px 25px rgba(0,0,0,0.06);
+transition:0.3s;
+position:relative;
+overflow:hidden;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.badge{
+position:absolute;
+top:15px;
+right:15px;
+background:#22c55e;
+color:white;
+padding:6px 12px;
+border-radius:999px;
+font-size:12px;
+font-weight:600;
+}
+
+.icon{
+font-size:42px;
+margin-bottom:18px;
+}
+
+.card h2{
+font-size:22px;
+margin-bottom:12px;
+}
+
+.card p{
+font-size:15px;
+line-height:1.6;
+color:#475569;
+margin-bottom:22px;
+}
+
+.btn{
+display:inline-block;
+background:#2563eb;
+color:white;
+padding:13px 22px;
+border-radius:12px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#1d4ed8;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:18px;
+margin-top:30px;
+}
+
+.stat{
+background:rgba(255,255,255,0.12);
+padding:18px;
+border-radius:18px;
+backdrop-filter:blur(12px);
+}
+
+.stat h3{
+font-size:24px;
+margin-bottom:5px;
+}
+
+footer{
+margin-top:60px;
+padding:30px;
+text-align:center;
+font-size:14px;
+color:#64748b;
+}
+
+.bottom-nav{
+position:fixed;
+bottom:0;
+left:0;
+right:0;
+background:white;
+display:flex;
+justify-content:space-around;
+padding:16px;
+box-shadow:0 -5px 20px rgba(0,0,0,0.08);
+border-top-left-radius:22px;
+border-top-right-radius:22px;
+z-index:999;
+}
+
+.bottom-nav a{
+text-decoration:none;
+font-size:14px;
+font-weight:600;
+color:#0f172a;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:30px;
+}
+
+.section-title{
+font-size:24px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+🚀 TravelSmart SuperApp
+</div>
+
+<div class="hero">
+
+<h1>
+Die Premium-App für Vergleiche & Cashback
+</h1>
+
+<p>
+Vergleiche Reisen, Versicherungen, Strom, DSL,
+Banking, Kredite und Solaranlagen in einer modernen SuperApp.
+</p>
+
+<a href="#services" class="hero-btn">
+Jetzt starten
+</a>
+
+<div class="stats">
+
+<div class="stat">
+<h3>500+</h3>
+<p>Tarife</p>
+</div>
+
+<div class="stat">
+<h3>24/7</h3>
+<p>Vergleich</p>
+</div>
+
+<div class="stat">
+<h3>100%</h3>
+<p>Kostenlos</p>
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<div class="main" id="services">
+
+<!-- VERSICHERUNGEN -->
+
+<h2 class="section-title">🛡 Versicherungen</h2>
+
+<div class="grid">
+
+<div class="card">
+<div class="badge">TOP</div>
+<div class="icon">❤️</div>
+<h2>Lebensversicherung</h2>
+<p>
+Sichere deine Zukunft mit modernen Versicherungstarifen.
+</p>
+
+<a class="btn"
+href="https://a.partner-versicherung.de/click.php?partner_id=110780&ad_id=15&deep=lebensversicherung"
+target="_blank">
+Jetzt vergleichen
+</a>
+</div>
+
+<div class="card">
+<div class="icon">🚘</div>
+<h2>KFZ Versicherung</h2>
+<p>
+KFZ-Tarife vergleichen und hohe Cashback-Vorteile sichern.
+</p>
+
+<a class="btn"
+href="https://a.partner-versicherung.de/click.php?partner_id=110780&ad_id=15&deep=kfzversicherung"
+target="_blank">
+KFZ vergleichen
+</a>
+</div>
+
+<div class="card">
+<div class="icon">🏠</div>
+<h2>Hausratversicherung</h2>
+<p>
+Schütze dein Zuhause mit günstigen Tarifen.
+</p>
+
+<a class="btn"
+href="https://a.partner-versicherung.de/click.php?partner_id=110780&ad_id=15&deep=hausratversicherung"
+target="_blank">
+Hausrat prüfen
+</a>
+</div>
+
+<div class="card">
+<div class="badge">BELIEBT</div>
+<div class="icon">⚖️</div>
+<h2>Rechtsschutz</h2>
+<p>
+Rechtsschutzversicherungen bequem online vergleichen.
+</p>
+
+<a class="btn"
+href="https://a.partner-versicherung.de/click.php?partner_id=110780&ad_id=15&deep=rechtsschutzversicherung"
+target="_blank">
+Jetzt prüfen
+</a>
+</div>
+
+</div>
+
+<!-- ENERGIE -->
+
+<h2 class="section-title">⚡ Energie & Solar</h2>
+
+<div class="grid">
+
+<div class="card">
+<div class="badge">SPAREN</div>
+<div class="icon">⚡</div>
+<h2>Stromvergleich</h2>
+<p>
+Jetzt Stromanbieter vergleichen und Energiekosten senken.
+</p>
+
+<a class="btn"
+href="https://a.partner-versicherung.de/click.php?partner_id=110780&ad_id=15&deep=strom"
+target="_blank">
+Strom vergleichen
+</a>
+</div>
+
+<div class="card">
+<div class="icon">🔥</div>
+<h2>Gasvergleich</h2>
+<p>
+Gastarife vergleichen und günstig heizen.
+</p>
+
+<a class="btn"
+href="https://a.partner-versicherung.de/click.php?partner_id=110780&ad_id=15&deep=gas"
+target="_blank">
+Gas vergleichen
+</a>
+</div>
+
+<div class="card">
+<div class="badge">TREND</div>
+<div class="icon">☀️</div>
+<h2>Solaranlagen</h2>
+<p>
+Photovoltaik- und Solaranlagen modern vergleichen.
+</p>
+
+<a class="btn"
+href="https://a.partner-versicherung.de/click.php?partner_id=110780&ad_id=15&deep=solaranlage"
+target="_blank">
+Solar prüfen
+</a>
+</div>
+
+</div>
+
+<!-- FINANZEN -->
+
+<h2 class="section-title">💳 Finanzen & Banking</h2>
+
+<div class="grid">
+
+<div class="card">
+<div class="icon">🏦</div>
+<h2>Girokonto</h2>
+<p>
+Moderne Girokonten und Banking-Angebote vergleichen.
+</p>
+
+<a class="btn"
+href="https://a.partner-versicherung.de/click.php?partner_id=110780&ad_id=15&deep=girokonto"
+target="_blank">
+Konten vergleichen
+</a>
+</div>
+
+<div class="card">
+<div class="icon">💳</div>
+<h2>Kreditkarten</h2>
+<p>
+Premium-Kreditkarten und Cashback-Angebote entdecken.
+</p>
+
+<a class="btn"
+href="https://a.partner-versicherung.de/click.php?partner_id=110780&ad_id=15&deep=kreditkarte"
+target="_blank">
+Kreditkarten prüfen
+</a>
+</div>
+
+<div class="card">
+<div class="badge">TOP</div>
+<div class="icon">💶</div>
+<h2>Kreditvergleich</h2>
+<p>
+Kredite online vergleichen und sparen.
+</p>
+
+<a class="btn"
+href="https://a.partner-versicherung.de/click.php?partner_id=110780&ad_id=15&deep=kredit"
+target="_blank">
+Kredite vergleichen
+</a>
+</div>
+
+</div>
+
+<!-- TELEKOM -->
+
+<h2 class="section-title">📱 Telekommunikation</h2>
+
+<div class="grid">
+
+<div class="card">
+<div class="icon">📶</div>
+<h2>DSL & Internet</h2>
+<p>
+Highspeed-Internet und DSL-Tarife vergleichen.
+</p>
+
+<a class="btn"
+href="https://a.partner-versicherung.de/click.php?partner_id=110780&ad_id=15&deep=dsl"
+target="_blank">
+DSL vergleichen
+</a>
+</div>
+
+<div class="card">
+<div class="badge">5G</div>
+<div class="icon">📱</div>
+<h2>Handytarife</h2>
+<p>
+5G-Handytarife und Smartphone-Angebote finden.
+</p>
+
+<a class="btn"
+href="https://a.partner-versicherung.de/click.php?partner_id=110780&ad_id=15&deep=handytarife"
+target="_blank">
+Tarife prüfen
+</a>
+</div>
+
+</div>
+
+<!-- REISEN -->
+
+<h2 class="section-title">✈ Reisen</h2>
+
+<div class="grid">
+
+<div class="card">
+<div class="badge">TOP</div>
+<div class="icon">✈️</div>
+<h2>Flugvergleich</h2>
+<p>
+Flüge weltweit vergleichen und günstiger buchen.
+</p>
+
+<a class="btn"
+href="https://a.partner-versicherung.de/click.php?partner_id=110780&ad_id=15&deep=flug"
+target="_blank">
+Flüge vergleichen
+</a>
+</div>
+
+<div class="card">
+<div class="icon">🏨</div>
+<h2>Hotels</h2>
+<p>
+Hotels weltweit zum besten Preis vergleichen.
+</p>
+
+<a class="btn"
+href="https://a.partner-versicherung.de/click.php?partner_id=110780&ad_id=15&deep=hotel"
+target="_blank">
+Hotels finden
+</a>
+</div>
+
+<div class="card">
+<div class="icon">🚗</div>
+<h2>Mietwagen</h2>
+<p>
+Mietwagen weltweit günstig buchen und sparen.
+</p>
+
+<a class="btn"
+href="https://a.partner-versicherung.de/click.php?partner_id=110780&ad_id=15&deep=mietwagen"
+target="_blank">
+Mietwagen prüfen
+</a>
+</div>
+
+</div>
+
+<footer>
+
+<p>
+© 2026 TravelSmart SuperApp
+</p>
+
+<p style="margin-top:10px;">
+Affiliate-System aktiv · Partner-ID 110780
+</p>
+
+</footer>
+
+</div>
+
+<div class="bottom-nav">
+
+<a href="#">🏠 Home</a>
+<a href="#services">🔍 Vergleiche</a>
+<a href="#">💎 Deals</a>
+<a href="#">👤 Konto</a>
+
+</div>
+
+</body>
+</html>
